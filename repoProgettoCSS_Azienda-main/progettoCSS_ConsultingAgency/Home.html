@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-
     <html>
         <head>
-            <link rel="stylesheet" href="css/styles.css">
+            <script src="https://kit.fontawesome.com/0cae5511b9.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="style.css">
             <title>Progetto</title>
         </head>
         <body>
 
+            <!-- header -->
             <header id="1">
                 <img class="logo" src="Images/mobile-logo.png" alt="logo">
                 <div class="btn-div">
@@ -17,37 +18,70 @@
                 </div>
             </header>
 
+            <!-- pagina centrale -->
             <div class="central-div">
 
-                <div class="div-superiore">
-                    <div class="descrizione-div">
-                        <h2 class="text">BANNER AZIENDA:</h2>
-                        <p class="descrizione">
-                            "La nostra azienda si occupa di fornire soluzioni tecnologiche 
-                            innovative per migliorare l'efficienza e la crescita delle imprese. 
-                            Offriamo servizi personalizzati di sviluppo software, consulenza IT 
-                            e progettazione web, aiutando i nostri clienti a raggiungere i loro obiettivi 
-                            con strumenti moderni e performanti."
-                        </p>
-                    </div>
-                    <div class="img-div">
-                        <img class="azienda-img" src="Images/azienda1.jpg" alt="azienda">
-                        <img class="azienda-img" src="Images/azienda2.jpg" alt="azienda">
-                    </div>
+                <div class="welcome-div">
+                    <h1 class="main-text">BENVENUTO SUL SITO</h1>
+                    <h2 class="text">"Sviluppiamo soluzioni digitali per il futuro del tuo business."</h2>
                 </div>
-                <div class="div-inferiore">
+
+                <div class="container">
+                    <div class="div-superiore">
+                        <div class="descrizione-div">
+                            <h2 class="text">BANNER AZIENDA:</h2>
+                            <p class="descrizione">
+                                "La nostra azienda si occupa di fornire soluzioni tecnologiche 
+                                innovative per migliorare l'efficienza e la crescita delle imprese. 
+                                Offriamo servizi personalizzati di sviluppo software, consulenza IT 
+                                e progettazione web, aiutando i nostri clienti a raggiungere i loro obiettivi 
+                                con strumenti moderni e performanti."
+                            </p>
+                        </div>
+                        <div class="img-div">
+                            <img class="azienda-img" src="images/azienda1.jpg" alt="azienda">
+                            <img class="azienda-img" src="images/azienda2.jpg" alt="azienda">
+                        </div>
+                    </div>
+
+                    <div class="div-superiore-dx">
+                        <h2 class="text">SERVIZI:</h2>
+                        <div class="servizi-container">
+                            <div class="list-container">
+                                <ul>
+                                    <li><p class="text2">Sviluppo Software</p></li>
+                                    <p class="text2">-Java</p>
+                                    <p class="text2">-SQL</p>
+                                    <li><p class="text2">Sviluppo Web</p></li>
+                                    <p class="text2">-HTML</p>
+                                    <p class="text2">-CSS</p>
+                                    <p class="text2">-JS</p>
+                                </ul>
+                            </div>
+                            <div class="img-container">
+                                <img class="azienda2-img" src="images/azienda.png" alt="azienda">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+                
+               <!--<div class="div-inferiore">
+
+                </div>--> 
 
             </div>
 
             <div>
-                <a href="#1"><input class="bottone-fisso" type="button" value="^"></a>
+                <a href="#1"><button class="bottone-fisso"><i id="angle-up" class="fas fa-angle-up"></i></button></a>
             </div>
 
+            <!-- footer -->
             <footer>
-                <div class="description-div">
+                <div class="logo-div">
                     <img class="vertical-logo" src="Images/vertical-logo.png" alt="logo">
+                </div>
+                <div class="description-div">
                     <p class="description-text">
                         "La nostra azienda si occupa di fornire soluzioni tecnologiche 
                         innovative per migliorare l'efficienza e la crescita delle imprese."
@@ -55,9 +89,15 @@
                 </div>
                 <div class="contatti-div">
                     <h2 class="contatti-text">Contatti:</h2>
-                    <p class="contatti-text">Via, Roma 9</p>
-                    <p class="contatti-text">prova@gmail.com</p>
-                    <p class="contatti-text">+39 3331234567</p>
+                    <p class="contatti-text"><i id="map" class="fa-solid fa-location-dot"></i>&emsp;Via, Roma 9</p>
+                    <p class="contatti-text"><i id="email" class="fa-solid fa-envelope"></i>&emsp;prova@gmail.com</p>
+                    <p class="contatti-text"><i id="phone" class="fa-solid fa-phone"></i>&emsp;+39 3331234567</p>
+                </div>
+                <div class="social-div">
+                    <h2 class="social-text">Social:</h2>
+                    <p class="social-text"><i id="social" class="fa-brands fa-facebook"></i>&emsp;Facebook</p>
+                    <p class="social-text"><i id="social" class="fa-brands fa-instagram"></i>&emsp;Instagram</p>
+                    <p class="social-text"><i id="social" class="fa-brands fa-linkedin"></i>&emsp;LinkedIn</p>
                 </div>
             </footer>
         </body>
