@@ -229,3 +229,10 @@ hr {
 .azienda-img:hover{
     transform: scale(1.05);
 }
+form.inset {border-style: inset;}
+
+paragrafo {
+    border: 1px solid black;
+    margin: 25px 50px;
+    background-color: lightblue;
+  }
