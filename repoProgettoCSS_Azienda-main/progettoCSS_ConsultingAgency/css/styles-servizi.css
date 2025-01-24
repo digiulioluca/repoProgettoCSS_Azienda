@@ -56,42 +56,58 @@ header{
 
 footer {
     display: flex;
-    bottom: 0;
+    bottom: 0; 
     width: 100%;
     height: 240px;
     background-color: #202020;
     align-items: center;
+    justify-content: center;
     gap: 50px;
-    color: #90dceb
 }
 
-.central-div{
+.logo-div{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    width: 100%;
+    width: 350px;
+    height: 240px;
 }
+
 
 .description-div{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 350px;
     height: 240px;
-    gap: 50px;
 }
 
 .description-text{
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    text-align: center;
+    color: #90dceb;
+}
+
+.description-text::selection{
+    color: #587e86;
+    background: none;
+}
+
+.contatti-text::selection{
+    color: #587e86;
+    background: none;
+}
+
+.social-text::selection{
+    color: #587e86;
+    background: none;
 }
 
 .vertical-logo{
+    margin-left: 20px;
     width: 200px;
-    margin-left: 1.5vw;
 }
 
 .contatti-div{
@@ -99,7 +115,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 350px;
     height: 240px;
 }
 
@@ -107,6 +123,31 @@ footer {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    color: #90dceb;
+}
+
+.social-text{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #90dceb;
+}
+
+.social-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 240px;
+}
+
+#map,
+#email,
+#phone,
+#social{
+    font-size: 26px;
+    color: #90dceb;
 }
 
 .bottone-fisso{
@@ -121,6 +162,20 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     z-index: 1;
+    transition: transform 0.2s ease;
+}
+
+.bottone-fisso:hover{
+    background-color: #7dbdc9;
+}
+
+.bottone-fisso:active{
+    transform: scale(0.95);
+}
+
+#angle-up{
+    font-size: 26px;
+    color: #202020;
 }
 
 details summary{
@@ -343,4 +398,9 @@ hr {
 
 #testo1{
     margin-top:-10px
+}
+
+.container{
+    display: flex;
+    justify-content: center;
 }
