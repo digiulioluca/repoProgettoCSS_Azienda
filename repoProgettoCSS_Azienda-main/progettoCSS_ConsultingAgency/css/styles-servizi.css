@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
-
 body{
-    background: linear-gradient(to right, rgba(69, 95, 100, 1), rgba(125, 189, 201, 0.9));
+    background: linear-gradient(to right, rgba(69, 95, 100, 1), rgba(125, 189, 201, 1));
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
+    color: #02161b;
 }
 
 .text{
@@ -58,15 +54,6 @@ header{
     transform: scale(0.95);
 }
 
-.central-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    width: 100%;
-}
-
 footer {
     display: flex;
     bottom: 0; 
@@ -109,6 +96,11 @@ footer {
 }
 
 .contatti-text::selection{
+    color: #587e86;
+    background: none;
+}
+
+.social-text::selection{
     color: #587e86;
     background: none;
 }
@@ -186,34 +178,67 @@ footer {
     color: #202020;
 }
 
-.div-superiore{
-    margin-top: 50px;
-    margin-bottom: 100px;
-    display: flex;
-    width: 50%;
-    height: 400px;
-    background-color: #90dceb;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 12px 6px 6px gray;
-    overflow-y: auto;
-    gap: 50px;
+details summary{
+    list-style: none;
+    font-size: x-large;
+    font-weight: bold;
 }
 
-.div-superiore ::selection {
-    color: #587e86;
+.sum_img{
+    display: block;
+    border: 10px;
+    width: 31vw;
+    height: 17vw;
+}
+
+::selection {
+    color: #90dceb;
     background: none;
 }
+
+#head_servizi{
+    text-align: center;
+}
+
+#head_servizi p{
+    margin: auto 8%;
+}
+
+hr {
+    margin-top: 10px;
+    border: none;
+    height: 10px;
+    width: auto;
+    background-color: #202020;
+    color: #202020;
+}
+
 
 .descrizione-div{
     display: flex;
     flex-direction: column;
     width: 25%;
     height: 400px;
+    background-color: #90dceb;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     align-items: center;
     justify-content: center;
+    box-shadow: 12px 6px 6px gray;
     overflow-y: auto;
+}
+
+.div-superiore{
+    display: flex;
+    width: 75%;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-superiore ::selection {
+    color: #587e86;
+    background: none;
 }
 
 .descrizione{
@@ -229,101 +254,153 @@ footer {
     display: flex;
     width: 50%;
     height: 400px;
+    background-color: #90dceb;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    box-shadow: 12px 6px 6px gray;
 }
 
 .azienda-img{
-    width: 50%;
+    /*width: 290px;*/
+    width: 40%;
     border-radius: 15px;
+    border: 2px dashed white;
     transition: transform 0.3s ease;
 }
 
 .azienda-img:hover{
-    transform: scale(1.10);
-    border: 2px dashed white;
+    transform: scale(1.05);
+}
+
+a:link {
+    color: #587e86;
+}
+
+a:visited {
+    color: #202020;
+}
+
+a:hover {
+    color: #587e86;
+}
+
+a:active {
+    color: #7dbdc9;
+}
+
+footer ::selection {
+    color: #587e86;
+}
+
+.servizi-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -60px;
+}
+
+.servizi-container p{
+    margin-right: 1px;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.servizi-container summary{
+    margin-right: 1px;
+    margin-top: -25px;
+}
+
+
+.servizi-container img{
+    
+    width: 30%;
+    height: 15%;
+    margin: 10px 20px 30px;
+}
+
+i:hover{
+    transform: rotate(90deg);
+}
+
+.test {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cont-servizi{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 1vw;
+    height: 20vh;
+}
+
+.div-superiore_2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-start;
+    width: 78%;
+    height: 80%;
+    background-color: #90dceb;
+    border-radius: 15px;
+    box-shadow: 12px 6px 6px gray;
+    gap: 50px;
+    font-style: oblique;
+}
+
+.div-superiore_2 ::selection {
+    color: #587e86;
+}
+
+.p-servizi{
+    text-align: left;
+    margin: 50px 15px -20px 30px;
+}
+
+.h2-servizi{
+    margin: -30px 40px;
+    font-size: 580%;
+    font-weight: 600;
+}
+
+.h4-servizi{
+    margin: 20px 40px 0;
+    font-size: 280%;
+    font-weight: 200;
+}
+
+.testo_servizi{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+
+.testo_servizi h1{
+    margin-bottom: 5px;
+}
+
+.testo_servizi p{
+    margin-right: 40px;
+}
+
+hr {
+    margin: 0 20%;
+    border: none;
+    height: 2px;
+    background-color: #202020;
+    color: #202020;
+}
+
+#testo1{
+    margin-top:-10px
 }
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.text2,
-.main-text{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #202020;   
-}
-
-.welcome-div{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 150px;
-    background-color: #90dceb;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 12px 6px 6px gray;
-    overflow-y: auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 15px;
-}
-
-.div-superiore-dx{
-    margin-top: -50px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: 400px;
-    background-color: #90dceb;
-    border-radius: 15px;
-    align-items: center;
-    box-shadow: 12px 6px 6px gray;
-}
-
-.div-superiore-dx ::selection{
-    color: #587e86;
-    background: none;
-}
-
-.welcome-div ::selection{
-    color: #587e86;
-    background: none;
-}
-
-.servizi-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.list-container{
-    width:50%;
-}
-
-.img-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:50%;
-}
-
-.azienda2-img{
-    margin-right: 50px;
-    width:100%;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-}
-
-.azienda2-img:hover{
-    transform: scale(1.10);
-    border: 2px dashed white;
 }

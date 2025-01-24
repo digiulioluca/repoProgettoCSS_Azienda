@@ -10,11 +10,13 @@ Ogni servizio dovrebbe essere presentato con una breve descrizione e un'icona o 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servizi</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-servizi.css">
+    <link rel="stylesheet" href="style-home.css">
+    <script src="https://kit.fontawesome.com/0cae5511b9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <!--header-->
     <header id="1">
         <img class="logo" src="Images/mobile-logo.png" alt="logo">
         <div class="btn-div">
@@ -25,96 +27,119 @@ Ogni servizio dovrebbe essere presentato con una breve descrizione e un'icona o 
         </div>
     </header>
 
-    <div id="head_servizi">
-        <h2>I nostri servizi</h2>
-        <p>
-            I nostri servizi comprendono attività di supporto e consulenza specializzata per risolvere problematiche aziendali, ottimizzare processi e raggiungere obiettivi strategici. Tra i principali servizi offerti ci sono:
-        </p>
-    </div>
-    <br>
-     <hr>
-    <div>
-        <a href="#1"><input class="bottone-fisso" type="button" value="^"></a>
-    </div>
+    <div class="central-div">
+        <div class="container">
+            <div class="div-superiore_2 cont-servizi">
+                <!--blocco dedicato agli header e al paragrafo introduttivo del nostro blocco-->
+                <div class="head_servizi">
+                    <h4 class="h4-servizi">I nostri</h4>
+                    <h2 class="h2-servizi">servizi</h2>
+                    <p class="p-servizi">
+                        I nostri servizi comprendono attività di supporto e consulenza specializzata per risolvere
+                        problematiche
+                        aziendali, ottimizzare processi e raggiungere obiettivi strategici. Tra i principali servizi
+                        offerti ci
+                        sono:
+                    </p>
+                </div>
+                <br>
 
-
-    <div id="central-div">
-        <ul>
-            <li>
-                <details>
-                    <summary>Consulenza strategica cambio</summary>
-                    <p>Supporto nella definizione e implementazione di strategie aziendali per raggiungere obiettivi a lungo
-                        termine, ottimizzando risorse e processi.</p>
+                <!--ogni blocco è organizzato con delle flexbox-->
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-strategica_1.jpg" alt="consultenza strategica">
-                </details>
-            </li>
-
-            <li>
-                <details>
-                    <summary>Consulenza gestionale</summary>
-                    <p>Analisi e miglioramento delle operazioni aziendali quotidiane, con l’obiettivo di aumentare
-                        l'efficienza, ridurre i costi e ottimizzare i flussi di lavoro.</p>
+                    <div class="testo_servizi">
+                        <h1>Consulenza strategica<h1>
+                                <p id="testo1">La consulenza strategica aiuta le aziende a definire obiettivi a lungo termine,
+                                    individuare opportunità di crescita e affrontare sfide competitive. I consulenti
+                                    strategici analizzano il mercato, il posizionamento dell'azienda e le tendenze
+                                    future, per fornire orientamenti su come migliorare la performance complessiva.</p>
+                    </div>
+                </div>
+                
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-gestionale_1.jpg" alt="consultenza gestionale">
-                </details>
-            </li>
+                    <div class="testo_servizi">
+                        <h1>Consulenza gestionale</h1>
+                        <p>La consulenza gestionale si concentra sul miglioramento dell'efficienza operativa e sulla
+                            gestione ottimale delle risorse aziendali. I consulenti lavorano con le aziende per
+                            analizzare i processi interni, individuare aree di inefficienza e implementare soluzioni per
+                            ottimizzare il flusso di lavoro.</p>
+                    </div>
+                </div>
 
-            <li>
-                <details>
-                    <summary>Consulenza finanziaria</summary>
-                    <p>Assistenza nella gestione delle risorse finanziarie, pianificazione fiscale, analisi degli
-                        investimenti e ottimizzazione della struttura del capitale.
-                    </p>
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-finanziaria_1.jpg" alt="consultenza finanziaria">
-                </details>
-            </li>
+                    <div class="testo_servizi">
+                        <h1>Consulenza finanziaria </h1>
+                        <p>La consulenza finanziaria supporta le imprese nella gestione delle risorse economiche e
+                            nell’ottimizzazione della struttura finanziaria. I consulenti finanziari forniscono analisi
+                            dettagliate sui bilanci aziendali, suggerendo strategie per migliorare la redditività e la
+                            solidità finanziaria.</p>
+                    </div>
+                </div>
 
-            <li>
-                <details>
-                    <summary>Consulenza marketing e comunicazione</summary>
-                    <p>Sviluppo di strategie di marketing per aumentare la visibilità del brand, migliorare la comunicazione
-                        con il pubblico e ottimizzare le campagne pubblicitarie.</p>
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-marketing_1.jpg" alt="consultenza marketing">
-                </details>
-            </li>
+                    <div class="testo_servizi">
+                        <h1>Consulenza marketing </h1>
+                        <p>La consulenza marketing aiuta le aziende a sviluppare strategie mirate per aumentare la
+                            visibilità, attrarre nuovi clienti e fidelizzare quelli esistenti. I consulenti marketing
+                            analizzano il mercato, il comportamento dei consumatori e le tendenze del settore per
+                            progettare piani di marketing efficaci, che comprendano campagne pubblicitarie, strategie
+                            digitali, branding e comunicazione.
+                        </p>
+                    </div>
+                </div>
 
-            <li>
-                <details>
-                    <summary>Consulenza IT e digitalizzazione</summary>
-                    <p>Supporto nell’adozione di tecnologie avanzate, gestione dei sistemi informatici aziendali,
-                        trasformazione digitale e protezione dei dati.
-                    </p>
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-informatica_1.jpg" alt="consultenza IT">
-                </details>
-            </li>
+                    <div class="testo_servizi">
+                        <h1>Consulenza IT e digital</h1>
+                        <p>La consulenza IT e digitale aiuta le aziende a integrare e ottimizzare soluzioni tecnologiche
+                            che supportino la trasformazione digitale. I consulenti in questo ambito forniscono
+                            indicazioni su come implementare sistemi informatici, software e piattaforme digitali che
+                            migliorino l'efficienza operativa e l’esperienza del cliente.</p>
+                    </div>
+                </div>
 
-            <li>
-                <details>
-                    <summary>Consulenza delle risorse umane</summary>
-                    <p>Gestione del talento, formazione del personale, ottimizzazione delle politiche di assunzione,
-                        sviluppo delle competenze e creazione di ambienti di lavoro produttivi.</p>
+                <div class="servizi-container">
                     <img class="sum_img" src="./images/consulenza-hr_1.jpg" alt="consultenza HR">
-                </details>
-            </li>
-        </ul>
-        <br><br><br><br><br><br><br><br><br><br>
+                    <div class="testo_servizi">
+                        <h1>Consulenza Risorse umane </h1>
+                        <p>La consulenza in risorse umane supporta le aziende nella gestione del capitale umano, creando
+                            strategie per attrarre, sviluppare e mantenere i migliori talenti. I consulenti HR
+                            forniscono supporto nella selezione del personale, nella gestione delle performance, nella
+                            formazione e nello sviluppo organizzativo. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br><br><br>
     </div>
-    
+
     <footer>
-        <div class="description-div">
+        <div class="logo-div">
             <img class="vertical-logo" src="Images/vertical-logo.png" alt="logo">
+        </div>
+        <div class="description-div">
             <p class="description-text">
-                gifgiipipfgifijfgiggifi
-                dfijfgijifgjijggifgijfgijaijgf
-                ijifjijajigfijfiijifgifijijijjij
-                ffgdfgfdgdggdfgfdgdfdfdgd
-                gdfgggddgfgf
+                "La nostra azienda si occupa di fornire soluzioni tecnologiche 
+                innovative per migliorare l'efficienza e la crescita delle imprese."
             </p>
         </div>
         <div class="contatti-div">
             <h2 class="contatti-text">Contatti:</h2>
-            <p class="contatti-text">Via, Roma 9</p>
-            <p class="contatti-text">prova@gmail.com</p>
-            <p class="contatti-text">+39 3331234567</p>
+            <p class="contatti-text"><i id="map" class="fa-solid fa-location-dot"></i>&emsp;Via, Roma 9</p>
+            <p class="contatti-text"><i id="email" class="fa-solid fa-envelope"></i>&emsp;prova@gmail.com</p>
+            <p class="contatti-text"><i id="phone" class="fa-solid fa-phone"></i>&emsp;+39 3331234567</p>
+        </div>
+        <div class="social-div">
+            <h2 class="social-text">Social:</h2>
+            <p class="social-text"><i id="social" class="fa-brands fa-facebook"></i>&emsp;Facebook</p>
+            <p class="social-text"><i id="social" class="fa-brands fa-instagram"></i>&emsp;Instagram</p>
+            <p class="social-text"><i id="social" class="fa-brands fa-linkedin"></i>&emsp;LinkedIn</p>
         </div>
     </footer>
 </body>
