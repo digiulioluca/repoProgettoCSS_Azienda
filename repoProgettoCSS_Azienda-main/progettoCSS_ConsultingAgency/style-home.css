@@ -63,8 +63,15 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
     width: 100%;
+    height: 850px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
 }
 
 footer {
@@ -109,6 +116,11 @@ footer {
 }
 
 .contatti-text::selection{
+    color: #587e86;
+    background: none;
+}
+
+.social-text::selection{
     color: #587e86;
     background: none;
 }
@@ -191,13 +203,13 @@ footer {
     margin-bottom: 100px;
     display: flex;
     width: 50%;
-    height: 400px;
+    min-height: 400px;
+    height: 50vh;
     background-color: #90dceb;
     border-radius: 15px;
     align-items: center;
     justify-content: center;
     box-shadow: 12px 6px 6px gray;
-    overflow-y: auto;
     gap: 50px;
 }
 
@@ -210,17 +222,15 @@ footer {
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 400px;
+    height: 90%;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
 }
 
 .descrizione{
-    margin-left: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 90%;
+    font-size: 85%;
     text-align: center;
     color: #202020;
 }
@@ -245,12 +255,6 @@ footer {
     border: 2px dashed white;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .text2,
 .main-text{
     font-family: 'Roboto', sans-serif;
@@ -259,7 +263,6 @@ footer {
 }
 
 .welcome-div{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -268,7 +271,6 @@ footer {
     align-items: center;
     justify-content: center;
     box-shadow: 12px 6px 6px gray;
-    overflow-y: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -281,7 +283,8 @@ footer {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 400px;
+    min-height: 400px;
+    height: 50vh;
     background-color: #90dceb;
     border-radius: 15px;
     align-items: center;
@@ -306,19 +309,19 @@ footer {
 }
 
 .list-container{
-    width:50%;
+    width: 50%;
 }
 
 .img-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width: 50%;
 }
 
 .azienda2-img{
     margin-right: 50px;
-    width:100%;
+    width: 100%;
     border-radius: 15px;
     transition: transform 0.3s ease;
 }
